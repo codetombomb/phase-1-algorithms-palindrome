@@ -1,18 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
-  return word[0] !== word[word.length - 1] ? false : true;
+  return word.split('').reverse().join('') === word ? true : false;
 }
 
 /* 
   Add your pseudocode here
-  If first letter and last letter are different, return false.
+  if the reversed version of word is that same as word, then return true else return false
 */
 
 /*
   Add written explanation of your solution here
-  compare first and last letters.
-  return false if these are different.
-  return true if they are the same.
+  reverse string
+  compare to original word
+  return true if they are the same
+  return false if they are different
 */
 
 // You can run `node index.js` to view these console logs
